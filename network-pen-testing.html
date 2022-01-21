@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Security Lab</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="burger-menu">
+      <i class="fas fa-times closeBTN white hover-cc fs-5"></i>
+      <div
+        class="mobile-nav-container flex-column d-flex justify-content-center"
+      >
+        <div class="navigation-item">
+          <a href="./index.html" class="fs-4 white hover-cc">Home</a>
+        </div>
+        <div class="navigation-item">
+          <a href="#" class="fs-4 white hover-cc">About us</a>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">Assessment</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./wap-testing.html" class="text my-3"
+              >Web Application Penetration Testing</a
+            >
+            <a href="./network-pen-testing.html" class="text my-3"
+              >Network Penetration Testing</a
+            >
+            <a href="./ma-pen-testing.html" class="text my-3"
+              >Mobile Application Penetration Testing</a
+            >
+          </div>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">Simulation</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./spear-phishing.html" class="text my-3"
+              >Spear Phishing Simulation
+            </a>
+          </div>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">SOC</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./managed-soc.html" class="text my-3">Managed SOC</a>
+          </div>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">Compliance</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./pci-dss.html" class="text my-3">PCI DSS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="burger-menu-icon openBTN">
+        <i class="fas fa-bars fs-4 white hover-cc"></i>
+      </div>
+      <div class="head-bg background-overlay"></div>
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-3">
+            <a href="./index.html">
+              <div class="logo-wrapper">
+                <img
+                  src="./assets/img/white-logo.png"
+                  alt="Cyber Security Lab Logo"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 desk-nav">
+            <nav>
+              <div class="navigation-container d-flex justify-content-center">
+                <div class="navigation-item">
+                  <a href="./index.html" class="white hover-cc hover-after"
+                    >Home</a
+                  >
+                </div>
+                <div class="navigation-item">
+                  <a href="#" class="white hover-cc hover-after">About us</a>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">Assessment</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./wap-testing.html" class="text"
+                      >Web Application Penetration Testing</a
+                    >
+                    <a href="./network-pen-testing.html" class="text"
+                      >Network Penetration Testing</a
+                    >
+                    <a href="./ma-pen-testing.html" class="text"
+                      >Mobile Application Penetration Testing</a
+                    >
+                  </div>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">Simulation</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./spear-phishing.html" class="text"
+                      >Spear Phishing Simulation
+                    </a>
+                  </div>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">SOC</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./managed-soc.html" class="text">Managed SOC</a>
+                  </div>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">Compliance</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./pci-dss.html" class="text">PCI DSS</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="col-3 d-flex justify-content-end desk-nav">
+            <a href="#" class="default-btn primary-bg white fw-500 hover-up"
+              >Get in touch</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="sub-info py-5 d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-lg-6 text-center">
+              <h1 class="white text-center">Network Penetration Testing</h1>
+              <div class="wrapper d-flex justify-content-center my-3">
+                <a href="#" class="text fs-2 hover-cc">Home</a>
+                <p class="fs-2 text mx-2">/</p>
+                <a href="#" class="text fs-2 hover-cc"> Assessment</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="main-info" class="dark-purple-bg">
+        <div class="container">
+          <div class="row justify-content-center p-5">
+            <div data-aos="fade-right" class="col-12 col-lg-4">
+              <div class="img-crumb my-5">
+                <img src="./assets/img/side-image-2.jpg" alt="" />
+              </div>
+            </div>
+            <div
+              data-aos="fade-left"
+              class="col-12 col-lg-6 ms-0 ms-lg-5 d-flex flex-column justify-content-center"
+            >
+              <div class="info-text white fs-3">
+                We offer network penetration testing service that will assist
+                the companies not only to get a detailed understanding of the
+                weaknesses, gaps, vulnerable points present in their IT
+                infrastructure but also to prioritize the mitigation actions to
+                reduce overall risks.
+                <p class="text mt-4 fs-2">
+                  Dozens of new vulnerabilities are published frequently along
+                  with acknowledgment from software vendors issuing security
+                  patches and fixes on weekly, if not daily basis. Best
+                  practices require all systems to be patched within an
+                  acceptable timeframe.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center m-70">
+            <div
+              data-aos="fade-right"
+              class="col-12 col-lg-6 ms-0 ms-lg-5 d-flex flex-column justify-content-center"
+            >
+              <div class="info-text white fs-3 pe-5">
+                Our Network Penetration Testing Service Approach
+                <p class="text mt-4 fs-2">
+                  Our Network Penetration Testing service replicates how a
+                  skilled and determined attacker will scour the network in
+                  search of vulnerable components. Network Penetration testing
+                  can also be used to assess weaknesses in security processes or
+                  security countermeasures such as firewalls.
+                </p>
+              </div>
+            </div>
+            <div data-aos="fade-left" class="col-12 col-lg-4 my-5">
+              <div class="img-crumb my-5">
+                <img src="./assets/img/side-image-3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="steps-info">
+        <div data-aos="fade-up" class="container">
+          <div class="row">
+            <div
+              class="col-12 col-lg-6 d-flex flex-column justify-content-start pt-5 fs-3 ps-5 ps-lg-0"
+            >
+              <h2 class="white">What Network Penetration Testing Covers</h2>
+              <p class="fs-2 text my-4">
+                Network penetration testing will reveal real-world opportunities
+                for hackers to be able to compromise systems and networks in
+                such a way that allows for unauthorized access to sensitive data
+                or even take-over systems for malicious/non-business purposes.
+                Our penetration attempting out technique includes an attack
+                simulation done through our rather skilled safety experts on the
+                way to:
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="step-card-container mt-5 mt-lg-0">
+                <div
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="bottom-bottom"
+                  class="step-card"
+                >
+                  <p class="fs-2-5 white line-down">
+                    <i class="fas fa-user-shield fs-4"></i>
+                  </p>
+                  <p class="fs-2 text mt-5 fw-400 line-height-1-8">
+                    Identify Security flaws within the environment
+                  </p>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="bottom-bottom"
+                  class="step-card"
+                >
+                  <p class="fs-2-5 white line-down">
+                    <i class="fas fa-house-damage fs-4"></i>
+                  </p>
+                  <p class="fs-2 text mt-5 fw-400 line-height-1-8">
+                    Understand the extent of damage on your enterprise
+                  </p>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="bottom-bottom"
+                  class="step-card"
+                >
+                  <p class="fs-2-5 white line-down">
+                    <i class="fas fa-file-signature fs-4"></i>
+                  </p>
+                  <p class="fs-2 text mt-5 fw-400 line-height-1-8">
+                    Help address and attach diagnosed network security flaws
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="network-services" data-aos="zoom-in" data-aos-duration="500">
+        <div class="container">
+          <div class="row my-5">
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex align-items-center hover-border"
+            >
+              <div class="method-card d-flex flex-column align-items-center">
+                <div class="wrapper d-flex align-items-center">
+                  <div class="img-wrapper method-card-image hover-animation">
+                    <img src="./assets/img/card-item-5.png" alt="CS item" />
+                  </div>
+                  <div class="fs-3 white text-center mb-5">
+                    Intelligence Gathering
+                  </div>
+                </div>
+                <div class="method-card-info fs-2 text">
+                  The discovery of all accessible systems and their respective
+                  services to obtain as much information as possible.
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex align-items-center hover-border"
+            >
+              <div class="method-card d-flex flex-column align-items-center">
+                <div class="wrapper d-flex align-items-center">
+                  <div class="img-wrapper method-card-image hover-animation">
+                    <img src="./assets/img/card-item-3.png" alt="CS item" />
+                  </div>
+                  <div class="fs-3 white text-center mb-5">Threat Modeling</div>
+                </div>
+                <div class="method-card-info fs-2 text">
+                  Identifying vulnerabilities within systems via automated scans
+                  and deep-dive manual testing techniques.
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex align-items-center hover-border"
+            >
+              <div
+                class="method-card d-flex flex-column justify-content-center align-items-center"
+              >
+                <div class="wrapper d-flex align-items-center">
+                  <div class="img-wrapper method-card-image hover-animation">
+                    <img src="./assets/img/card-item-1.png" alt="CS item" />
+                  </div>
+                  <div class="fs-3 white text-center mb-5">
+                    Vulnerability Analysis
+                  </div>
+                </div>
+                <div class="method-card-info fs-2 text">
+                  Documenting and analyzing vulnerabilities to develop the plan
+                  of attack.
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex align-items-center hover-border"
+            >
+              <div
+                class="method-card d-flex flex-column justify-content-center align-items-center"
+              >
+                <div class="wrapper d-flex align-items-center">
+                  <div class="img-wrapper method-card-image hover-animation">
+                    <img src="./assets/img/card-item-2.png" alt="CS item" />
+                  </div>
+                  <div class="fs-3 white text-center mb-5">Exploitation</div>
+                </div>
+                <div class="method-card-info fs-2 text">
+                  Actually carrying out the attempt to exploit
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex align-items-center hover-border"
+            >
+              <div
+                class="method-card d-flex flex-column justify-content-center align-items-center"
+              >
+                <div class="wrapper d-flex align-items-center">
+                  <div class="img-wrapper method-card-image hover-animation">
+                    <img src="./assets/img/card-item-8.png" alt="CS item" />
+                  </div>
+                  <div class="fs-3 white text-center mb-5">Reporting</div>
+                </div>
+                <div class="method-card-info fs-2 text">
+                  Prioritizing findings to generate an actionable report with
+                  evidence.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="py-5 dark-purple-bg">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-4">
+            <div class="logo-wrapper my-5">
+              <img src="./assets/img/white-logo.png" alt="" />
+            </div>
+            <p class="fs-1-75 text line-height-1-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 ps-5 d-flex flex-column flex-lg-row">
+            <div class="info me-8">
+              <p class="fs-3 white fw-600 my-5">Headquarter</p>
+              <div class="d-flex align-items-center my-4">
+                <i class="fas fa-building fs-1-75 primary"></i>
+                <p class="text fs-1-75 hover-cc ms-3">Avenue Building</p>
+              </div>
+              <div class="d-flex align-items-center my-4">
+                <i class="fa fa-map-marker fs-1-75 primary"></i>
+                <p class="text fs-1-75 hover-cc ms-3">Your address here</p>
+              </div>
+              <div class="d-flex align-items-center my-4">
+                <i class="fas fa-phone-alt fs-1-75 primary"></i>
+                <p class="text fs-1-75 hover-cc ms-3">Your number here</p>
+              </div>
+            </div>
+            <div class="info me-8">
+              <p class="fs-3 white fw-600 my-5">Useful Links</p>
+              <div class="d-flex align-items-center my-4">
+                <p class="text fs-1-75 hover-cc ms-3">About us</p>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <p class="text fs-1-75 hover-cc ms-3">Our services</p>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <p class="text fs-1-75 hover-cc ms-3">Clients</p>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <p class="text fs-1-75 hover-cc ms-3">Contact us</p>
+              </div>
+            </div>
+            <div class="info">
+              <p class="fs-3 white fw-600 my-5">Follow us</p>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Facebook</a>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Linkedin</a>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Youtube</a>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="src/tilt.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

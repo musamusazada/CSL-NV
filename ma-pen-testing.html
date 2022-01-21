@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Security Lab</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="burger-menu">
+      <i class="fas fa-times closeBTN white hover-cc fs-5"></i>
+      <div
+        class="mobile-nav-container flex-column d-flex justify-content-center"
+      >
+        <div class="navigation-item">
+          <a href="./index.html" class="fs-4 white hover-cc">Home</a>
+        </div>
+        <div class="navigation-item">
+          <a href="#" class="fs-4 white hover-cc">About us</a>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">Assessment</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./wap-testing.html" class="text my-3"
+              >Web Application Penetration Testing</a
+            >
+            <a href="./network-pen-testing.html" class="text my-3"
+              >Network Penetration Testing</a
+            >
+            <a href="./ma-pen-testing.html" class="text my-3"
+              >Mobile Application Penetration Testing</a
+            >
+          </div>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">Simulation</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./spear-phishing.html" class="text my-3"
+              >Spear Phishing Simulation
+            </a>
+          </div>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">SOC</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./managed-soc.html" class="text my-3">Managed SOC</a>
+          </div>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">Compliance</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./pci-dss.html" class="text my-3">PCI DSS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="burger-menu-icon openBTN">
+        <i class="fas fa-bars fs-4 white hover-cc"></i>
+      </div>
+      <div class="head-bg background-overlay"></div>
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-3">
+            <a href="./index.html">
+              <div class="logo-wrapper">
+                <img
+                  src="./assets/img/white-logo.png"
+                  alt="Cyber Security Lab Logo"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 desk-nav">
+            <nav>
+              <div class="navigation-container d-flex justify-content-center">
+                <div class="navigation-item">
+                  <a href="./index.html" class="white hover-cc hover-after"
+                    >Home</a
+                  >
+                </div>
+                <div class="navigation-item">
+                  <a href="#" class="white hover-cc hover-after">About us</a>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">Assessment</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./wap-testing.html" class="text"
+                      >Web Application Penetration Testing</a
+                    >
+                    <a href="./network-pen-testing.html" class="text"
+                      >Network Penetration Testing</a
+                    >
+                    <a href="./ma-pen-testing.html" class="text"
+                      >Mobile Application Penetration Testing</a
+                    >
+                  </div>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">Simulation</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./spear-phishing.html" class="text"
+                      >Spear Phishing Simulation
+                    </a>
+                  </div>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">SOC</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./managed-soc.html" class="text">Managed SOC</a>
+                  </div>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">Compliance</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./pci-dss.html" class="text">PCI DSS</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="col-3 d-flex justify-content-end desk-nav">
+            <a href="#" class="default-btn primary-bg white fw-500 hover-up"
+              >Get in touch</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="sub-info py-5 d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-lg-6 text-center">
+              <h1 class="white text-center">
+                Mobile Application Penetration Testing
+              </h1>
+              <div class="wrapper d-flex justify-content-center my-3">
+                <a href="#" class="text fs-2 hover-cc">Home</a>
+                <p class="fs-2 text mx-2">/</p>
+                <a href="#" class="text fs-2 hover-cc"> Assessment</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="main-info" class="dark-purple-bg">
+        <div class="container">
+          <div class="row justify-content-center ps-5">
+            <div data-aos="fade-right" class="col-12 col-lg-4">
+              <div class="img-crumb my-5">
+                <img src="./assets/img/mobile-image.jpg" alt="" />
+              </div>
+            </div>
+            <div
+              data-aos="fade-left"
+              class="col-12 col-lg-6 ms-0 ms-lg-5 d-flex flex-column justify-content-center"
+            >
+              <div class="info-text white fs-3">
+                Mobile applications are becoming a common platform for
+                supporting both business and leisure activities.
+                <p class="text mt-4 fs-2">
+                  These mobile applications essentially live in the public
+                  domain leaving it open to the potential for malicious
+                  exploitation. Breaches of such nature can damage the
+                  reputation and public levels of trust in mobile applications
+                  published by organizations
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="steps-info">
+        <div class="container">
+          <div class="row">
+            <div
+              data-aos="fade-up"
+              class="col-12 col-lg-6 d-flex flex-column justify-content-start pt-5 fs-3"
+            >
+              <h2 class="white">
+                Our Approach to <br />
+                Mobile Pentest
+              </h2>
+              <p class="fs-2 text my-4">
+                We follow a holistic approach combining our experience in mobile
+                platform-specific analysis and methodologies from related
+                application security assessments and provide in-depth mobile app
+                security assessments using the latest mobile application
+                development frameworks and security testing tools.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="step-card-container my-5 my-lg-0">
+                <div
+                  data-aos="fade-down-left"
+                  data-aos-duration="900"
+                  class="step-card"
+                >
+                  <p class="fs-3 fw-600 white line-down">
+                    01. Scope and Information Gathering
+                  </p>
+                  <p class="fs-2 text mt-5 fw-400 line-height-1-8">
+                    Onboarding the client, gathering the required information to
+                    begin our penetration testing. Collecting the environment
+                    details, access to the application with the right
+                    permission, whitelist our IP’s.
+                  </p>
+                </div>
+                <div
+                  data-aos="fade-down-left"
+                  data-aos-duration="900"
+                  class="step-card"
+                >
+                  <p class="fs-3 fw-600 white line-down">
+                    02. Perform penetration testing
+                  </p>
+                  <p class="fs-2 text mt-5 fw-400 line-height-1-8">
+                    We perform penetration testing and run automated scans using
+                    commercial and open-source tools. We also perform manual
+                    penetration testing according to the business logic of the
+                    application.
+                  </p>
+                </div>
+                <div
+                  data-aos="fade-down-left"
+                  data-aos-duration="900"
+                  class="step-card"
+                >
+                  <p class="fs-3 fw-600 white line-down">
+                    03. Report Submission
+                  </p>
+                  <p class="fs-2 text mt-5 fw-400 line-height-1-8">
+                    After collecting all the vulnerabilities using manual and
+                    automated scans, we provide the penetration testing report
+                    for clients to start fixing the vulnerabilities.
+                  </p>
+                </div>
+                <div
+                  data-aos="fade-down-left"
+                  data-aos-duration="900"
+                  class="step-card"
+                >
+                  <p class="fs-3 fw-600 white line-down">04. Retest</p>
+                  <p class="fs-2 text mt-5 fw-400 line-height-1-8">
+                    Once the client fixes all the vulnerabilities in the
+                    application. They resubmit a build for retesting. During the
+                    retesting, we retest the issues that were observed during
+                    the primary round of penetration testing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team-methodology">
+        <div class="container">
+          <div class="row my-1">
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex align-items-center hover-border"
+            >
+              <div
+                data-aos="fade-up"
+                data-aos-duration="900"
+                class="method-card d-flex flex-column align-items-center"
+              >
+                <div class="img-wrapper method-card-image hover-animation">
+                  <img src="./assets/img/card-item-5.png" alt="CS item" />
+                </div>
+                <div class="fs-3 white text-center mb-5">
+                  Vulnerability Management
+                </div>
+                <div class="method-card-info fs-2 text">
+                  Penetration testing provides a severity wise ordered report,
+                  documenting vulnerabilities that are proven to be exploitable.
+                  Allowing your organisation to proactively find which
+                  vulnerabilities are critical and which are less critical or
+                  false positives.
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex align-items-center hover-border"
+            >
+              <div
+                data-aos="fade-up"
+                data-aos-duration="900"
+                class="method-card d-flex flex-column align-items-center"
+              >
+                <div class="img-wrapper method-card-image hover-animation">
+                  <img src="./assets/img/card-item-3.png" alt="CS item" />
+                </div>
+                <div class="fs-3 white text-center mb-5">
+                  Preserve Brand Customer Confidence
+                </div>
+                <div class="method-card-info fs-2 text">
+                  Compromised accounts and data breaches can create a negative
+                  impact on your brand and affect your sales. Penetration
+                  testing helps identify and fix vulnerabilities that could be
+                  used to exfiltrate sensitive and personally.
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex align-items-center hover-border"
+            >
+              <div
+                data-aos="fade-up"
+                data-aos-duration="900"
+                class="method-card d-flex flex-column justify-content-center align-items-center"
+              >
+                <div class="img-wrapper method-card-image hover-animation">
+                  <img src="./assets/img/card-item-1.png" alt="CS item" />
+                </div>
+                <div class="fs-3 white text-center mb-5">
+                  Avoid Downtime and Breach Costs
+                </div>
+                <div class="method-card-info fs-2 text">
+                  Network downtime caused by a data breach can cost up to $2
+                  million, with the average cost of a breach costing $30,000.
+                  Mobile application penetration testing allows your
+                  organization to help identify potentially exploitable
+                  vulnerabilities proactively before they are exploited by a
+                  malicious attacker allowing you to plan remediation and give
+                  priority to critical and high-level findings.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="py-5 dark-purple-bg">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-4">
+            <div class="logo-wrapper my-5">
+              <img src="./assets/img/white-logo.png" alt="" />
+            </div>
+            <p class="fs-1-75 text line-height-1-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 ps-5 d-flex flex-column flex-lg-row">
+            <div class="info me-8">
+              <p class="fs-3 white fw-600 my-5">Headquarter</p>
+              <div class="d-flex align-items-center my-4">
+                <i class="fas fa-building fs-1-75 primary"></i>
+                <p class="text fs-1-75 hover-cc ms-3">Avenue Building</p>
+              </div>
+              <div class="d-flex align-items-center my-4">
+                <i class="fa fa-map-marker fs-1-75 primary"></i>
+                <p class="text fs-1-75 hover-cc ms-3">Your address here</p>
+              </div>
+              <div class="d-flex align-items-center my-4">
+                <i class="fas fa-phone-alt fs-1-75 primary"></i>
+                <p class="text fs-1-75 hover-cc ms-3">Your number here</p>
+              </div>
+            </div>
+            <div class="info me-8">
+              <p class="fs-3 white fw-600 my-5">Useful Links</p>
+              <div class="d-flex align-items-center my-4">
+                <p class="text fs-1-75 hover-cc ms-3">About us</p>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <p class="text fs-1-75 hover-cc ms-3">Our services</p>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <p class="text fs-1-75 hover-cc ms-3">Clients</p>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <p class="text fs-1-75 hover-cc ms-3">Contact us</p>
+              </div>
+            </div>
+            <div class="info">
+              <p class="fs-3 white fw-600 my-5">Follow us</p>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Facebook</a>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Linkedin</a>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Youtube</a>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="src/tilt.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>

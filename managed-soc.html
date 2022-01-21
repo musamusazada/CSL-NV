@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Security Lab</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="burger-menu">
+      <i class="fas fa-times closeBTN white hover-cc fs-5"></i>
+      <div
+        class="mobile-nav-container flex-column d-flex justify-content-center"
+      >
+        <div class="navigation-item">
+          <a href="./index.html" class="fs-4 white hover-cc">Home</a>
+        </div>
+        <div class="navigation-item">
+          <a href="#" class="fs-4 white hover-cc">About us</a>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">Assessment</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./wap-testing.html" class="text my-3"
+              >Web Application Penetration Testing</a
+            >
+            <a href="./network-pen-testing.html" class="text my-3"
+              >Network Penetration Testing</a
+            >
+            <a href="./ma-pen-testing.html" class="text my-3"
+              >Mobile Application Penetration Testing</a
+            >
+          </div>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">Simulation</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./spear-phishing.html" class="text my-3"
+              >Spear Phishing Simulation
+            </a>
+          </div>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">SOC</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./managed-soc.html" class="text my-3">Managed SOC</a>
+          </div>
+        </div>
+        <div class="navigation-item hover-cc">
+          <a href="#" class="fs-4 white">Compliance</a>
+          <div class="menu-sub-menu d-flex flex-column mt-3">
+            <a href="./pci-dss.html" class="text my-3">PCI DSS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="burger-menu-icon openBTN">
+        <i class="fas fa-bars fs-4 white hover-cc"></i>
+      </div>
+      <div class="head-bg background-overlay"></div>
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-3">
+            <a href="./index.html">
+              <div class="logo-wrapper">
+                <img
+                  src="./assets/img/white-logo.png"
+                  alt="Cyber Security Lab Logo"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="col-6 desk-nav">
+            <nav>
+              <div class="navigation-container d-flex justify-content-center">
+                <div class="navigation-item">
+                  <a href="./index.html" class="white hover-cc hover-after"
+                    >Home</a
+                  >
+                </div>
+                <div class="navigation-item">
+                  <a href="#" class="white hover-cc hover-after">About us</a>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">Assessment</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./wap-testing.html" class="text"
+                      >Web Application Penetration Testing</a
+                    >
+                    <a href="./network-pen-testing.html" class="text"
+                      >Network Penetration Testing</a
+                    >
+                    <a href="./ma-pen-testing.html" class="text"
+                      >Mobile Application Penetration Testing</a
+                    >
+                  </div>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">Simulation</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./spear-phishing.html" class="text"
+                      >Spear Phishing Simulation
+                    </a>
+                  </div>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">SOC</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./managed-soc.html" class="text">Managed SOC</a>
+                  </div>
+                </div>
+                <div class="navigation-item hover-cc hover-after">
+                  <a href="#" class="white">Compliance</a>
+                  <div class="sub-menu mt-3">
+                    <a href="./pci-dss.html" class="text">PCI DSS</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="col-3 d-flex justify-content-end desk-nav">
+            <a href="#" class="default-btn primary-bg white fw-500 hover-up"
+              >Get in touch</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="sub-info py-5 d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-lg-6 text-center">
+              <h1 class="white text-center">Managed SOC</h1>
+              <div class="wrapper d-flex justify-content-center my-3">
+                <a href="#" class="text fs-2 hover-cc">Home</a>
+                <p class="fs-2 text mx-2">/</p>
+                <a href="#" class="text fs-2 hover-cc">SOC</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="steps-info">
+        <div data-aos="fade-down" class="container">
+          <div class="row">
+            <div
+              class="col-12 d-flex flex-column justify-content-start pt-5 fs-3"
+            >
+              <h2 class="white text-center my-5 fs-5">
+                What is Managed SOC(Security Operations Center) ?
+              </h2>
+            </div>
+            <div
+              class="col-12 text text-center line-down fs-2 line-height-1-8 py-5"
+            >
+              Most of the companies, especially large scale industries, Fintech,
+              Pharma, Education, Product and Service based companies prefer to
+              have their Security Operations Center outsourced, to focus mainly
+              on their business objectives and revenue growth. CSL handles its
+              customers throughout the SOC service life cycle from advice or
+              requirements analysis and implementation, monitoring, and support.
+              Our internal research team gather relevant information related to
+              any attacks wherever it may be found; analyzing and synthesizing
+              it into an understandable format, at times before a threat has
+              even reached your organization.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="why-us-" class="dark-purple-bg py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 my-5 my-lg-0">
+              <div class="img-wrapper">
+                <img
+                  src="./assets/img/side-image-4.jpg"
+                  alt="Person looking to Supercomputer"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column px-5">
+              <p data-aos="fade-left" class="fs-5 white fw-700">
+                Discover The Benefits Of Working With Us
+              </p>
+              <p data-aos="fade-left" class="fs-2 my-5 text line-height-1-8">
+                <i class="fas fa-check primary fs-3 me-3"></i>
+                Subscription-based services that manage and monitor your logs,
+                devices, clouds, network, preventing security intrusions,
+                managing vulnerabilities, detecting malware, etc. to protect
+                your operational effectiveness and information assets
+              </p>
+              <p data-aos="fade-left" class="fs-2 my-5 text line-height-1-8">
+                <i class="fas fa-check primary fs-3 me-3"></i>
+                Our SOC research team alerts you to any emerging threats that
+                could affect your organization’s operations and impact your
+                financial performance, expose customer data that could damage
+                your organization’s brand and reputation. We provide you
+                actionable guidance to effectively defend the attack.
+              </p>
+              <p data-aos="fade-left" class="fs-2 my-5 text line-height-1-8">
+                <i class="fas fa-check primary fs-3 me-3"></i>
+                Cloud-based services or access to client's security information
+                and actionable guidance to improve their security posture.
+              </p>
+              <p data-aos="fade-left" class="fs-2 my-5 text line-height-1-8">
+                <i class="fas fa-check primary fs-3 me-3"></i>
+                Protect your reputation and maintain the trust of your
+                investors, customers, and partners.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="our-services" class="py-5">
+        <div class="container">
+          <div data-aos="zoom-out-up" class="row justify-content-center">
+            <div class="col-12">
+              <h3 class="fs-5 white fw-600 text-center my-5">
+                Our service include responsibilities as
+              </h3>
+            </div>
+            <p class="col-6 text fs-2 line-height-1-8 text-center line-down">
+              Advanced Threat Intelligence – Professional Teams | 24/7 Security
+              Monitoring. We ensure the trust and company protection by our
+              managed SOC as a Service
+            </p>
+          </div>
+          <div class="row my-5">
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex align-items-center my-5"
+            >
+              <div
+                data-aos="zoom-in-up"
+                class="method-card d-flex flex-column align-items-center hover-border dark-purple-bg"
+              >
+                <div class="img-wrapper method-card-image hover-animation">
+                  <img src="./assets/img/card-item-5.png" alt="CS item" />
+                </div>
+                <div class="fs-3 white text-center mb-5">
+                  SOC: Security Operations Centre
+                </div>
+                <div class="method-card-info fs-1-75 text">
+                  24/7 Cyber Monitoring in real-time Infrastructure,
+                  Applications, or Software Management Event Notification,
+                  Detection of malicious behavior Development of specific
+                  detection rules Continuous Improvement,Filtration of
+                  incoming/outgoing traffic Penetration Testing Reports for
+                  Auditors Customized and Development Security Recommendations
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
+              <div
+                data-aos="zoom-in-up"
+                class="method-card d-flex flex-column align-items-center hover-border mid-purple-bg"
+              >
+                <div class="img-wrapper method-card-image hover-animation">
+                  <img src="./assets/img/card-item-3.png" alt="CS item" />
+                </div>
+                <div class="fs-3 white text-center mb-5">
+                  CSIRT: Computer Security Incident Response Team
+                </div>
+                <div class="method-card-info fs-1-75 text">
+                  Cyber Incident Response Figuring out solutions and strategies
+                  for avoiding incidents Intrusion Detection,Protection of
+                  systems and networks which can be compromised Vulnerability
+                  Handling,Reviewing other corners of the network to prevent
+                  possible spreading of incident Risk Analysis,Filtration of
+                  incoming/outgoing traffic Business Continuity and Disaster
+                  Recovery Planning / LXC
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
+              <div
+                data-aos="zoom-in-up"
+                class="method-card d-flex flex-column justify-content-center align-items-center hover-border dark-purple-bg"
+              >
+                <div class="img-wrapper method-card-image hover-animation">
+                  <img src="./assets/img/card-item-1.png" alt="CS item" />
+                </div>
+                <div class="fs-3 white text-center mb-5">
+                  Threat Intelligence
+                </div>
+                <div class="method-card-info fs-1-75 text">
+                  Reports on threats as per client’s data/context Continuous
+                  monitoring of emerging threats We maintain the intended access
+                  control procedure as part of Confidentiality, Integrity, and
+                  Availability (CIA) Maintaining knowledge base regularly
+                  (Threat Quotient) Solutions are proposed by our experts in
+                  response to ongoing Tactics, Techniques, Procedures (TTPs) and
+                  indicators of compromise (IoCs) used by the attackers.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="py-5 dark-purple-bg">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-4">
+            <div class="logo-wrapper my-5">
+              <img src="./assets/img/white-logo.png" alt="" />
+            </div>
+            <p class="fs-1-75 text line-height-1-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 ps-5 d-flex flex-column flex-lg-row">
+            <div class="info me-8">
+              <p class="fs-3 white fw-600 my-5">Headquarter</p>
+              <div class="d-flex align-items-center my-4">
+                <i class="fas fa-building fs-1-75 primary"></i>
+                <p class="text fs-1-75 hover-cc ms-3">Avenue Building</p>
+              </div>
+              <div class="d-flex align-items-center my-4">
+                <i class="fa fa-map-marker fs-1-75 primary"></i>
+                <p class="text fs-1-75 hover-cc ms-3">Your address here</p>
+              </div>
+              <div class="d-flex align-items-center my-4">
+                <i class="fas fa-phone-alt fs-1-75 primary"></i>
+                <p class="text fs-1-75 hover-cc ms-3">Your number here</p>
+              </div>
+            </div>
+            <div class="info me-8">
+              <p class="fs-3 white fw-600 my-5">Useful Links</p>
+              <div class="d-flex align-items-center my-4">
+                <p class="text fs-1-75 hover-cc ms-3">About us</p>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <p class="text fs-1-75 hover-cc ms-3">Our services</p>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <p class="text fs-1-75 hover-cc ms-3">Clients</p>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <p class="text fs-1-75 hover-cc ms-3">Contact us</p>
+              </div>
+            </div>
+            <div class="info">
+              <p class="fs-3 white fw-600 my-5">Follow us</p>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Facebook</a>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Linkedin</a>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Youtube</a>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <a href="#" class="text fs-1-75 hover-cc ms-3">Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="src/tilt.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
